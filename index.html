@@ -21,7 +21,7 @@ layout: default
 
           <div class="row">
             {% if page.gemver %}
-                {{ [![Gem Version](https://badge.fury.io/rb/confoog.svg)](http://badge.fury.io/rb/confoog) }}
+
             {% endif %}
             {% if page.travis %}
 
@@ -31,12 +31,16 @@ layout: default
           {{ page.content }}
 
           <div class="row">
+            <div class="col-sm-6 link-to-project">
             {% if page.homepage %}
-                <div class="col-sm-6 link-to-project"><a href=" {{ page.homepage }}"><span class="fa fa-home"></span></span> Homepage</a></div>
+              <a href=" {{ page.homepage }}"><span class="fa fa-home"></span></span> Homepage</a>
             {% endif %}
+            </div>
+              <div class="col-sm-6 link-to-project">
             {% if page.repo %}
-                <div class="col-sm-6 link-to-project"><a href="http://github.com/{{ page.repo }}"><span class="fa fa-github"></span></span> GitHub Repository</a></div>
+              <a href="http://github.com/{{ page.repo }}"><span class="fa fa-github"></span></span> GitHub Repository</a>
             {% endif %}
+            </div>
           </div>
           <div class="row">
             <div class="col-sm-4 col-sm-offset-8 link-to-top"><a href="#"><span class="fa fa-arrow-up"></span></span> top</a></div>
