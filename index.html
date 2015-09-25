@@ -1,6 +1,52 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 <body>
-<h1>Placeholder</h1>
+  <div id="main">
+    {% for page in site.posts reversed %}
+      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+      <div id="{{id}}">
+        <div class="container">
+          {% if page.title <> "" %}
+            <h2 class="post-title">
+              {% if page.git-icon %}
+                <span class="mega-octicon octicon-{{ page.git-icon }}"></span>
+              {% endif %}
+              {{ page.title }}
+            </h2>
+          {% endif %}
+          {% if page.tagline %}
+            <div class="project-tagline">{{ page.tagline }}</div>
+          {% endif %}
+
+          <div class="row">
+            {% if page.gemver %}
+                {{ [![Gem Version](https://badge.fury.io/rb/confoog.svg)](http://badge.fury.io/rb/confoog) }}
+            {% endif %}
+            {% if page.travis %}
+
+            {% endif %}
+          </div>
+
+          {{ page.content }}
+
+          <div class="row">
+            {% if page.homepage %}
+                <div class="col-sm-6 link-to-project"><a href=" {{ page.homepage }}"><span class="fa fa-home"></span></span> Homepage</a></div>
+            {% endif %}
+            {% if page.repo %}
+                <div class="col-sm-6 link-to-project"><a href="http://github.com/{{ page.repo }}"><span class="fa fa-github"></span></span> GitHub Repository</a></div>
+            {% endif %}
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-8 link-to-top"><a href="#"><span class="fa fa-arrow-up"></span></span> top</a></div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="site.js"></script>
 </html>

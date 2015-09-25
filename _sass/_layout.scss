@@ -1,0 +1,91 @@
+.site-title {
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+}
+
+.site-tagline {
+    font-size: 18px;
+    line-height: 56px;
+    font-style: italic;
+    text-align: right;
+    vertical-align: bottom;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    margin-bottom: 10px;
+}
+
+.page-content {
+    text-align: justify;
+}
+
+.page-footer {
+    padding-bottom: 30px;
+    padding-top: 5px;
+    margin-top: 30px;
+    border-top: dashed;
+    border-top-width: thin;
+}
+
+.project-box {
+  border: solid;
+  border-width: thin;
+}
+
+.project-tagline {
+    margin-top: -10px;
+    text-align: center;
+    font-style: italic;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+    margin-bottom: 10px;
+    // background-color: #9DFF9D;
+    background-color: #FFFFCC;
+}
+
+.mega-octicon {
+    vertical-align: top;
+}
+
+.menu-home {
+    font-size: 32px;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: solid;
+    border-bottom-width: thin;
+}
+
+.external-link {
+    text-align: right;
+    text-decoration: none;
+    :hover {
+      text-decoration: none;
+    }
+}
+
+.link-to-project {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    :hover {
+      text-decoration: none;
+    }
+}
+
+.link-to-top {
+    text-align: right;
+    text-decoration: none;
+    :hover {
+      text-decoration: none;
+    }
+}
