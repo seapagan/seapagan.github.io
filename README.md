@@ -1,4 +1,4 @@
-## confoog.seapagan.net
+## opensource.seapagan.net
 
 This is the [Jekyll][jekyll] source for my simple website of my few open-source projects on [GitHub][github]
 
