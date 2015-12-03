@@ -6,7 +6,7 @@ layout: default
     {% for page in site.posts reversed %}
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
       <div id="{{id}}">
-        <div class="container">
+        <div class="container well well-lg">
           {% if page.title <> "" %}
             <h2 class="post-title">
               {% if page.git-icon %}
