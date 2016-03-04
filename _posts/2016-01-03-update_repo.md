@@ -19,7 +19,7 @@ It goes without saying that at the very least a working copy of both [`Git`][git
 #### Quick start
 Create a [YAML](http://yaml.org/)-formatted configuration file `.updatereporc` **in your home directory** that contains at least a 'location' tag pointing to the directory containing the git repositories you wish to have updated :
 
-{% highlight ruby %}
+{% highlight yaml %}
 ---
 location:
 - /media/myuser/git-repos
