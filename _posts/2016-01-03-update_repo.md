@@ -1,7 +1,7 @@
 ---
 title: Update_Repo
 tagline: "A Simple Gem to keep multiple cloned Git Repositories up to date"
-#homepage: ""
+homepage: "https://updaterepo.seapagan.net"
 repo: "seapagan/update_repo"
 ---
 
